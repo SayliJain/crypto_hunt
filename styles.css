@@ -3,24 +3,26 @@ body, h1, h2, p, a {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 /* Basic styling for the header */
 header {
-    background-color: #f0f0f0;
+    background-color: #1b1b1b;
     text-align: center;
     padding: 20px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 48px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* Style the main content section */
 main {
     padding: 20px;
     text-align: center;
+    background-color: #000;
 }
 
 section {
@@ -28,27 +30,38 @@ section {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Style the links */
 a {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #ff6b6b;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 a:hover {
-    background-color: #555;
+    background-color: #ff1f1f;
 }
 
 /* Style the footer */
 footer {
-    background-color: #f0f0f0;
+    background-color: #1b1b1b;
     text-align: center;
     padding: 10px;
 }
+
+/* Add a retro font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
