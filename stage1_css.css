@@ -10,6 +10,12 @@ body {
     height: 100%;
 }
 
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    color: white;
+}
+
 #blackDivBox {
     background-color: black;
     width: 1200px;
@@ -29,6 +35,24 @@ body {
     background-color: rgb(0, 0, 0); /* Set the background color as needed */
     margin: 10px; /* Adjust the margin as needed */
     border-radius: 5px; /* Add rounded corners to the inner divs */
+}
+
+.innerDiv:nth-child(2) p {
+    text-align: center; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    height: 100%; /* Ensure full height */
+    font-size: 35px; /* Increase the text size as needed */
+}
+
+.innerDiv:nth-child(1) p {
+    text-align: center; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    height: 100%; /* Ensure full height */
+    font-size: 35px; /* Increase the text size as needed */
 }
 
 #innerText { 
