@@ -27,7 +27,10 @@ table, th, td {
     /* opacity: 0.7; Adjust the opacity as needed */
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Change to a column layout */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the div */
 }
 
 .innerDiv {
@@ -35,26 +38,14 @@ table, th, td {
     background-color: rgba(0, 0, 0, 0); /* Set the background color as needed */
     margin: 10px; /* Adjust the margin as needed */
     border-radius: 5px; /* Add rounded corners to the inner divs */
-}
-
-.innerDiv:nth-child(2) p {
     text-align: center; /* Center horizontally */
     display: flex;
     justify-content: center; /* Center vertically */
     align-items: center;
     height: 100%; /* Ensure full height */
     font-size: 35px; /* Increase the text size as needed */
-}
-
-.innerDiv:nth-child(1) p {
-    text-align: center; /* Center horizontally */
-    display: flex;
-    justify-content: center; /* Center vertically */
-    align-items: center;
-    height: 100%; /* Ensure full height */
-    font-size: 35px; /* Increase the text size as needed */
-}
-
-#innerText { 
     color: white;
 }
+
+
+
