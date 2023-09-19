@@ -5,23 +5,25 @@ body, p, button {
     font-family: 'monospace', monospace;
 }
 
-/* Style the container */
+/* Style the container  */
 .container {
     background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 80vh; */
     color: #fff;
 }
 
-/* Style the cryptic message */
+/* Style the cryptic message  */
 .message {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: lighter;
+    color: white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-bottom: 30px;
 }
 
 .cryptic-text {
@@ -29,6 +31,7 @@ body, p, button {
 }
 
 /* Style the image container */
+
 .image-container {
     margin-bottom: 20px;
 }
@@ -40,6 +43,7 @@ img {
 }
 
 /* Style the text on each side of the image */
+
 .text {
     display: flex;
     justify-content: space-between;
@@ -52,6 +56,7 @@ img {
 }
 
 /* Style the pill-shaped buttons */
+
 .button-container {
     display: flex;
     justify-content: space-around;
@@ -74,6 +79,7 @@ img {
 }
 
 /* Hide the popups initially */
+
 .popup {
     display: none;
     position: fixed;
@@ -88,6 +94,7 @@ img {
 }
 
 /* Style the popup content */
+
 .popup p {
     font-size: 24px;
     color: #fff;
@@ -116,6 +123,7 @@ img {
     margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
+    color: white;
     border-right: .17em solid pink;
     animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
   }
@@ -141,6 +149,104 @@ img {
 
 
   .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 9px white;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+*/
+
+/* Reset some default styles to ensure consistency */
+body, p, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'monospace', monospace;
+}
+
+/* Set background color to black for the entire page */
+body {
+    background-color: #000;
+}
+
+/* Style the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Style the header */
+.header {
+    text-align: center;
+}
+
+.cryptic-text {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0; /* Remove margin to center align */
+    padding-top: 20px; /* Add padding for spacing */
+}
+
+/* Style the typewriter text */
+.typewriter {
+    text-align: center;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.typewriter h3 {
+    font-family: monospace;
+    letter-spacing: .17em;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .17em solid pink;
+    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+
+/* Style the image container */
+.image-container {
+    margin-top: 60px; /* Add margin for spacing */
+    margin-bottom: 20px;
+    text-align: center; /* Center the image */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* Display the image as inline-block */
+}
+
+
+/* Style the pill-shaped buttons */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.button {
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -153,12 +259,13 @@ img {
     border: none;
     border-radius: 30px;
     box-shadow: 0 9px white;
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color:red;
-    box-shadow: white;
+}
+
+.button:hover {background-color: #563e8e}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #7d7b7b;
     transform: translateY(4px);
-  }
+}
+
